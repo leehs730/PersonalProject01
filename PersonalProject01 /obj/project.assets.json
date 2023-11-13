@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/t2023-m0043/Projects/PersonalProject01/PersonalProject01/PersonalProject01.csproj",
+      "projectUniqueName": "/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /PersonalProject01.csproj",
       "projectName": "PersonalProject01",
-      "projectPath": "/Users/t2023-m0043/Projects/PersonalProject01/PersonalProject01/PersonalProject01.csproj",
+      "projectPath": "/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /PersonalProject01.csproj",
       "packagesPath": "/Users/t2023-m0043/.nuget/packages/",
-      "outputPath": "/Users/t2023-m0043/Projects/PersonalProject01/PersonalProject01/obj/",
+      "outputPath": "/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/t2023-m0043/.nuget/NuGet/NuGet.Config"

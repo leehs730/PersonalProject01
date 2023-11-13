@@ -42,6 +42,7 @@ internal class Program
         // 아이텀 정보를 넣을 인벤토리 클래스 생성
         inventory = new Inventory();
 
+        // 인벤토리 클래스의 AddItem 메서드로 아이템 정보 넣기
         inventory.AddItem(steelarmor);
         inventory.AddItem(rustysword);
         inventory.AddItem(woodhelmet);
@@ -50,6 +51,7 @@ internal class Program
         inventory.AddItem(dragonglove);
     }
 
+    // 각 아이템 클래스의 isEquipped 값에 따라 플레이어의 스탯 업데이트
     static void UpdateStats()
     {
         player.UpdateStats(inventory.GetEquippedItems());
@@ -87,9 +89,9 @@ internal class Program
     {
         
         Console.Clear();
-
+        
         Console.WriteLine("상태보기");
-        Console.WriteLine("캐릭터의 정보르 표시합니다.");
+        Console.WriteLine("캐릭터의 정보를 표시합니다.");
         Console.WriteLine();
         Console.WriteLine($"Lv.{player.Level}");
         Console.WriteLine($"{player.Name}({player.Job})");
@@ -113,6 +115,7 @@ internal class Program
         }
     }
 
+    // 인벤토리 아이템 목록 업데이트 
     static void DisplayInventory()
     {
         Console.Clear();
@@ -140,6 +143,7 @@ internal class Program
         }
     }
 
+    // 아이템을 장착 및 해제를 할 수 있는 기능 메서드
     static void SelectItem()
     {
         Console.Clear();
@@ -166,6 +170,7 @@ internal class Program
         }
     }
 
+    // 목록 및 선택 가능한 숫자의 범위를 넘지 않도록 제한을 두는 메서드
     static int CheckValidInput(int min, int max)
     {
         while (true)
@@ -184,7 +189,7 @@ internal class Program
     }
 }
 
-// 캐릭터 스텟 정보 참
+// 캐릭터 스텟 정보 클래스 
 public class Character
 {
     public string Name { get; }
@@ -210,6 +215,7 @@ public class Character
         Gold = gold;
     }
 
+    // 아이템 장착에 따른 플레이어 스텟의 변화
     public void UpdateStats(List<Item> equippedItems)
     {
         int totalAttack = AlphaAtk;
@@ -232,6 +238,7 @@ public class Character
     }
 }
 
+// 아이템 정보 클래스 
 public class Item
 {
     public int Index { get; }
@@ -255,21 +262,25 @@ public class Item
 }
 
 
-
+// 인벤토리의 기능을 구연한 클래스
 class Inventory
 {
+    // 준비된 아이템 정보들을 리스트에 저장
     public static List<Item> items = new List<Item>();
 
+    // 리스트에 아이템 정보를 추가하는 메서드
     public void AddItem(Item item)
     {
         items.Add(item);
     }
 
+    // 리스트에 있는 아이템 정보들을 제거하는 메서드
     public void RemoveItem(Item item)
     {
         items.Remove(item);
     }
 
+    // 리스트에 있는 아이템 정보 목록들을 출력해주는 메서드, 추가로 아이템 장착 유무에 따른 표시 기능 구현
     public void Display()
     {
         foreach(var item in items)
@@ -279,6 +290,7 @@ class Inventory
         }
     }
 
+    // 리스트에 있는 아이템 정보들을 번호와 함깨 출력함
     public void Select()
     {
         for(int i = 0; i< items.Count; i++)
@@ -288,6 +300,7 @@ class Inventory
         }
     }
 
+    // 아이템을 장착 및 해제 할 수 있는 메서드
     public void EquipItem(int index)
     {
         if (index >= 0 && index < items.Count)
@@ -309,6 +322,7 @@ class Inventory
         }
     }
 
+    // 아이템 클래스의 isEquipped 변수의 값들을 가져옴
     public List<Item> GetEquippedItems()
     {
         return items.FindAll(item => item.IsEquipped);

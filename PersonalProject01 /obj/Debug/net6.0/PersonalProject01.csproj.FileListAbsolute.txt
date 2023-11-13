@@ -13,3 +13,18 @@
 /Users/t2023-m0043/Projects/PersonalProject01/PersonalProject01/obj/Debug/net6.0/PersonalProject01.pdb
 /Users/t2023-m0043/Projects/PersonalProject01/PersonalProject01/obj/Debug/net6.0/PersonalProject01.genruntimeconfig.cache
 /Users/t2023-m0043/Projects/PersonalProject01/PersonalProject01/obj/Debug/net6.0/ref/PersonalProject01.dll
+/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /bin/Debug/net6.0/PersonalProject01
+/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /bin/Debug/net6.0/PersonalProject01.deps.json
+/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /bin/Debug/net6.0/PersonalProject01.runtimeconfig.json
+/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /bin/Debug/net6.0/PersonalProject01.dll
+/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /bin/Debug/net6.0/PersonalProject01.pdb
+/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /obj/Debug/net6.0/PersonalProject01.csproj.AssemblyReference.cache
+/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /obj/Debug/net6.0/PersonalProject01.GeneratedMSBuildEditorConfig.editorconfig
+/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /obj/Debug/net6.0/PersonalProject01.AssemblyInfoInputs.cache
+/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /obj/Debug/net6.0/PersonalProject01.AssemblyInfo.cs
+/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /obj/Debug/net6.0/PersonalProject01.csproj.CoreCompileInputs.cache
+/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /obj/Debug/net6.0/PersonalProject01.dll
+/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /obj/Debug/net6.0/refint/PersonalProject01.dll
+/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /obj/Debug/net6.0/PersonalProject01.pdb
+/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /obj/Debug/net6.0/PersonalProject01.genruntimeconfig.cache
+/Users/t2023-m0043/Documents/GitHub/PersonalProject01/PersonalProject01 /obj/Debug/net6.0/ref/PersonalProject01.dll
