@@ -135,8 +135,10 @@ internal class Program
         Console.Clear();
 
         Console.WriteLine("인벤토리 \n보유 중인 아이템을 관리할 수 있습니다.\n");
-        Console.WriteLine("[아이템 목록]");
+        Console.WriteLine("                       [아이템 목록]");
+        Console.WriteLine("============================================================");
         inventory.Display();
+        Console.WriteLine("============================================================");
         Console.WriteLine();
         Console.WriteLine("1. 장착 관리");
         Console.WriteLine("2. 아이템 정렬");
@@ -168,8 +170,10 @@ internal class Program
         Console.Clear();
 
         Console.WriteLine("인벤토리 - 장착관리\n장착 및 해체할 아이템을 선택하세요.\n");
-        Console.WriteLine("[아이템 목록]");
+        Console.WriteLine("                       [아이템 목록]");
+        Console.WriteLine("============================================================");
         inventory.Select();
+        Console.WriteLine("============================================================");
         Console.WriteLine("0. 나가기");
         Console.WriteLine();
         Console.Write(">>");
@@ -418,7 +422,7 @@ class Inventory
         foreach(var item in items)
         {
             string equipMark = item.IsEquipped ? "[E]" : "";
-            Console.WriteLine($"- {equipMark} {item.Name}  | {item.StatInfo} + {item.Stat} | {item.Description}");
+            Console.WriteLine($"- {equipMark} {item.Name, -7}  | {item.StatInfo} + {item.Stat} | {item.Description, -40:C}");
         }
     }
 
@@ -428,7 +432,7 @@ class Inventory
         for(int i = 0; i< items.Count; i++)
         {
             string equipMark = items[i].IsEquipped ? "[E]" : "";
-            Console.WriteLine($"{i + 1}. {equipMark} {items[i].Name}  | {items[i].StatInfo} + {items[i].Stat} | {items[i].Description}");
+            Console.WriteLine($"{i + 1}. {equipMark} {items[i].Name,-7}  | {items[i].StatInfo} + {items[i].Stat} | {items[i].Description, -40:C}");
         }
     }
 
