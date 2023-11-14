@@ -31,24 +31,30 @@ internal class Program
         // 캐릭터 정보 세팅
         player = new Character("Chad", "전사", 1, 10, 5, 100, 1500);
 
-        // 아이템 정보 세팅
-        steelarmor = new Item(1, "무쇠갑옷", "방어력", 5, ItemType.Armor,  "무쇠로 만들어져 튼튼한 갑옷입니다");
-        rustysword = new Item(2, "낡은 검", "공격력", 2, ItemType.Weapon, "쉽게 볼 수 있는 낡은 검 입니다");
-        woodhelmet = new Item(3, "목제투구", "방어력", 1, ItemType.Armor, "간단히 구할 수 있는 모자 방어구입니다.");
-        hexagondagger = new Item(4, "헥사곤단검", "공격력", 10, ItemType.Weapon, "이 시대에서 확인되지 못한 물질로 만든 단검입니다.");
-        noblepants = new Item(5, "귀족의 바지", "방어력", 4, ItemType.Armor, "비싼데 왠지 사기를 당한거 같습니다.");
-        dragonglove = new Item(6, "용의 장갑", "방어력", 8, ItemType.Armor, "귀한 용의 가죽으로 만든 단단한 장갑입니다.");
+        //// 아이템 정보 세팅
+        //steelarmor = new Item(1, "무쇠갑옷", "방어력", 5, ItemType.Armor,  "무쇠로 만들어져 튼튼한 갑옷입니다");
+        //rustysword = new Item(2, "낡은 검", "공격력", 2, ItemType.Weapon, "쉽게 볼 수 있는 낡은 검 입니다");
+        //woodhelmet = new Item(3, "목제투구", "방어력", 1, ItemType.Armor, "간단히 구할 수 있는 모자 방어구입니다.");
+        //hexagondagger = new Item(4, "헥사곤단검", "공격력", 10, ItemType.Weapon, "이 시대에서 확인되지 못한 물질로 만든 단검입니다.");
+        //noblepants = new Item(5, "귀족의 바지", "방어력", 4, ItemType.Armor, "비싼데 왠지 사기를 당한거 같습니다.");
+        //dragonglove = new Item(6, "용의 장갑", "방어력", 8, ItemType.Armor, "귀한 용의 가죽으로 만든 단단한 장갑입니다.");
 
-        // 아이텀 정보를 넣을 인벤토리 클래스 생성
+        // 아이텀 정보를 넣을 인벤토리 클래스 생성 
         inventory = new Inventory();
 
+        inventory.AddItem(new Item(1, "무쇠갑옷", "방어력", 5, ItemType.Armor, "무쇠로 만들어져 튼튼한 갑옷입니다"));
+        inventory.AddItem(new Item(2, "낡은 검", "공격력", 2, ItemType.Weapon, "쉽게 볼 수 있는 낡은 검 입니다"));
+        inventory.AddItem(new Item(3, "목제투구", "방어력", 1, ItemType.Armor, "간단히 구할 수 있는 모자 방어구입니다."));
+        inventory.AddItem(new Item(4, "헥사곤단검", "공격력", 10, ItemType.Weapon, "이 시대에서 확인되지 못한 물질로 만든 단검입니다."));
+        inventory.AddItem(new Item(5, "귀족의 바지", "방어력", 4, ItemType.Armor, "비싼데 왠지 사기를 당한거 같습니다."));
+        inventory.AddItem(new Item(6, "용의 장갑", "방어력", 8, ItemType.Armor, "귀한 용의 가죽으로 만든 단단한 장갑입니다."));
         // 인벤토리 클래스의 AddItem 메서드로 아이템 정보 넣기
-        inventory.AddItem(steelarmor);
-        inventory.AddItem(rustysword);
-        inventory.AddItem(woodhelmet);
-        inventory.AddItem(hexagondagger);
-        inventory.AddItem(noblepants);
-        inventory.AddItem(dragonglove);
+        //inventory.AddItem(steelarmor);
+        //inventory.AddItem(rustysword);
+        //inventory.AddItem(woodhelmet);
+        //inventory.AddItem(hexagondagger);
+        //inventory.AddItem(noblepants);
+        //inventory.AddItem(dragonglove);
     }
 
     // 각 아이템 클래스의 isEquipped 값에 따라 플레이어의 스탯 업데이트
@@ -62,7 +68,10 @@ internal class Program
     {
         Console.Clear();
 
-        Console.WriteLine("스파르타 마을에 오신 여러분 환영합니다.");
+        Console.ForegroundColor = ConsoleColor.DarkRed;
+        Console.Write("스파르타");
+        Console.ResetColor();
+        Console.WriteLine(" 마을에 오신 여러분 환영합니다.");
         Console.WriteLine("이곳에서 전전으로 들어가기 전 활동을 할 수 있습니다.");
         Console.WriteLine();
         Console.WriteLine("1. 상태보기");
@@ -89,8 +98,10 @@ internal class Program
     {
         
         Console.Clear();
-        
+
+        Console.ForegroundColor = ConsoleColor.DarkCyan;
         Console.WriteLine("상태보기");
+        Console.ResetColor();
         Console.WriteLine("캐릭터의 정보를 표시합니다.");
         Console.WriteLine();
         Console.WriteLine($"Lv.{player.Level}");
